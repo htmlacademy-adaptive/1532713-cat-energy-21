@@ -1,0 +1,25 @@
+.catalog-preview {
+  background-color: $gray;
+}
+
+.catalog-preview__title {
+  font-family: "Oswald Regular", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+
+.catalog-preview__text {
+  color: $special-dark-gray;
+}
+
+.catalog-preview__link {
+  font-family: "Oswald Regular", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: $black;
+  text-decoration: none;
+  text-transform: uppercase;
+}
