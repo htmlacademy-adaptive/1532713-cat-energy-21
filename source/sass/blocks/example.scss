@@ -1,0 +1,14 @@
+.example {
+  background-color: $lighter-gray;
+}
+
+.example__text {
+  color: $special-dark-gray;
+}
+
+.example__price {
+  font-family: "Oswald Regular", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
