@@ -1,0 +1,10 @@
+.program-type {
+  text-transform: uppercase;
+  color: $special-dark-gray;
+
+  @include fieldset-no-decor;
+}
+
+.program-type__list {
+  @include list-no-decor;
+}

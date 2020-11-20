@@ -1,0 +1,5 @@
+.general-info {
+  text-transform: uppercase;
+
+  @include fieldset-no-decor;
+}

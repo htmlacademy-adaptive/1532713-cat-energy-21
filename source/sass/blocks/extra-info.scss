@@ -1,0 +1,7 @@
+.extra-info {
+  @include fieldset-no-decor;
+}
+
+.extra-info__list {
+  @include list-no-decor;
+}
