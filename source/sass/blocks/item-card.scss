@@ -1,0 +1,18 @@
+.item-card__title-link {
+  text-decoration: none;
+}
+
+.item-card__title {
+  font-family: "Oswald Regular", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $special-dark-gray-2;
+}
+
+.item-card__details {
+  margin: 0;
+  padding: 0;
+  color: $special-dark-gray;
+}
