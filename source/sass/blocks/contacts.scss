@@ -1,3 +1,22 @@
+.contacts__texts-wrapper {
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 738px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
+}
+
+.contacts__welcome-and-address {
+  display: flex;
+  justify-content: space-between;
+}
+
 .contacts__welcome {
   font-family: "Oswald Regular", sans-serif;
   font-weight: 400;
@@ -5,8 +24,18 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $almost-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 21px;
+  }
 }
 
 .contacts__address {
   color: $special-dark-gray;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
