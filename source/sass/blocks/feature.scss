@@ -1,13 +1,29 @@
+.feature {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
 .feature__numbers {
   font-family: "Oswald Regular", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .feature__description {
   color: $special-dark-gray;
   font-size: 12px;
   line-height: 12px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
