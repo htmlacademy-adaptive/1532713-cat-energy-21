@@ -10,13 +10,14 @@
 
 <body class="body">
   <header class="page-header body__header">
+    <div class="page-header__wrapper">
     <a class="page-header__logo" href="index.html">
       <img class="page-header__logo-icon" src="https://via.placeholder.com/33x37" alt="Логотип магазина Cat Energy">
       <img class="page-header__logo-text" src="https://via.placeholder.com/101x18" alt="Cat Energy">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <div class="main-nav__wrapper">
+      <button class="main-nav__toggle main-nav__toggle--on" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="main-nav__wrapper main-nav__wrapper--on">
         <ul class="main-nav__list">
           <li class="main-nav__list-item"><a href="index.html">Главная</a></li>
           <li class="main-nav__list-item"><a>Каталог продукции</a></li>
@@ -24,9 +25,11 @@
         </ul>
       </div>
     </nav>
+    </div>
   </header>
 
   <main class="main-catalog body__main-catalog">
+    <div class="main-catalog__wrapper">
     <h1 class="main-catalog__title">Каталог продукции</h1>
     <section class="main-catalog__basic-products basic-products">
       <h2 class="visually-hidden">Основные товары</h2>
@@ -213,68 +216,77 @@
           </div>
           <a class="item-card__button button" href="#">Заказать</a>
         </li>
+        <li class="basic-products__list-item show-more">
+          <p class="show-more__prompt">Показать еще 100500 товаров</p>
+          <p class="show-more__description">На самом деле вкусов гораздо больше!</p>
+          <a class="show-more__button button button--show-more" href="#">Показать все</a>
+        </li>
       </ul>
-      <div class="basic-products__show-more show-more">
-        <p class="show-more__prompt">Показать еще 100500 товаров</p>
-        <p class="show-more__description">На самом деле вкусов гораздо больше!</p>
-        <a class="show-more__button button button--show-more" href="#">Показать все</a>
-      </div>
     </section>
     <section class="main-catalog__extra-products extra-products">
       <h2 class="extra-products__title">Дополнительные товары</h2>
       <ul class="extra-products__list">
         <li class="extra-products__list-item extra-card">
+          <div class="extra-card__info">
           <h3 class="extra-card__title">Сахарозаменитель</h3>
           <dl class="extra-card__details">
             <dt class="extra-card__volume">1 упаковка (100 г)</dt>
             <dd class="extra-card__price">200 р.</dd>
           </dl>
+          </div>
           <a class="extra-card__button button" href="#">Заказать</a>
         </li>
         <li class="extra-products__list-item extra-card">
-
+          <div class="extra-card__info">
           <h3 class="extra-card__title">Питьевая вода</h3>
           <dl class="extra-card__details">
             <dt class="extra-card__volume">5 литров</dt>
             <dd class="extra-card__price">50 р.</dd>
           </dl>
+          </div>
           <a class="extra-card__button button" href="#">Заказать</a>
         </li>
         <li class="extra-products__list-item extra-card">
+          <div class="extra-card__info">
           <h3 class="extra-card__title">Молоко</h3>
           <dl class="extra-card__details">
             <dt class="extra-card__volume">1 литр</dt>
             <dd class="extra-card__price">100 р.</dd>
           </dl>
+          </div>
           <a class="extra-card__button button" href="#">Заказать</a>
         </li>
         <li class="extra-products__list-item extra-card">
+          <div class="extra-card__info">
           <h3 class="extra-card__title">Витамины</h3>
           <dl class="extra-card__details">
             <dt class="extra-card__volume">1 упаковка (30 г)</dt>
             <dd class="extra-card__price">300 р.</dd>
           </dl>
+          </div>
           <a class="extra-card__button button" href="#">Заказать</a>
         </li>
       </ul>
+      <aside class="extra-products__gift-promo gift-promo">
+        <p class="gift-promo__text">Закажите все и&nbsp;получите чехол для кота в подарок!</p>
+      </aside>
     </section>
-    <aside class="main-catalog__gift-promo gift-promo">
-      <p class="gift-promo__text">Закажите все и получите чехол для кота в подарок!</p>
-    </aside>
+  </div>
   </main>
   <footer class="page-footer body__footer">
     <section class="contacts page-footer__contacts">
-      <h2 class="visually-hidden">Как нас найти</h2>
-      <div class="contacts__welcome">
-        <p>Приглашаем к сотрудничеству дилеров!</p>
-      </div>
-      <div class="contacts__address">
-        <p>ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <div class="contacts__texts-wrapper">
+        <h2 class="visually-hidden">Как нас найти</h2>
+        <div class="contacts__welcome-and-address">
+          <p class="contacts__welcome">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
       </div>
       <img class="contacts__map" src="https://via.placeholder.com/320x362" alt="Как нас найти">
       <div class="contacts__map-point"></div>
     </section>
     <section class="page-footer__bottom footer-bottom">
+      <div class="footer-bottom__wrapper">
       <h2 class="visually-hidden">Наши контакты</h2>
       <a class="footer-bottom__logo" href="index.html"><img src="https://via.placeholder.com/128x24"
           alt="Cat Energy"></a>
@@ -288,6 +300,7 @@
           <p class="footer-bottom__academy-title">HTML Academy</p>
           <img class="footer-bottom__academy-icon" src="https://via.placeholder.com/27x34" alt="Логотип HTML Academy">
         </a>
+      </div>
       </div>
     </section>
   </footer>

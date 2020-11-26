@@ -1,3 +1,31 @@
 .owner-contacts {
   @include fieldset-no-decor;
 }
+
+.owner-contacts__title {
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 76px;
+  }
+}
+
+.owner-contacts__email-and-phone {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.owner-contacts__email {
+  @media (min-width: $desktop-width) {
+    width: 569px;
+    margin-right: 78px;
+    margin-bottom: 0;
+  }
+}
+
+.owner-contacts__phone-number {
+  @media (min-width: $desktop-width) {
+    width: 572px;
+  }
+}

@@ -3,8 +3,31 @@
   color: $special-dark-gray;
 
   @include fieldset-no-decor;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 569px;
+    border: 1px solid $border-light-gray;
+  }
 }
 
 .program-type__list {
   @include list-no-decor;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 25px;
+    padding-left: 28px;
+  }
+}
+
+.program-type__list-item {
+  margin-bottom: 13px;
+}
+
+.program-type__list-item:last-child {
+  margin-bottom: 0;
 }

@@ -5,6 +5,21 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $special-dark-gray;
+  display: flex;
+  margin-bottom: 13px;
+  height: 45px;
+  vertical-align: middle;
+
+  @media (min-width: $tablet-width) {
+    height: 52px;
+    font-size: 20px;
+    line-height: auto;
+    margin-bottom: 20px;
+  }
+}
+
+.text-form:last-child {
+  margin-bottom: 0;
 }
 
 .text-form__input {
@@ -13,6 +28,22 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  width: 100%;
+  margin-left: 14px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: auto;
+  }
+}
+
+.text-form__label {
+  padding-top: 14px;
+  flex-shrink: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 17px;
+  }
 }
 
 .text-form__input::placeholder {

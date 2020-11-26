@@ -10,6 +10,7 @@
 
 <body class="body">
   <header class="page-header body__header">
+    <div class="page-header__wrapper">
     <a class="page-header__logo" href="index.html">
       <img class="page-header__logo-icon" src="https://via.placeholder.com/33x37" alt="Логотип магазина Cat Energy">
       <img class="page-header__logo-text" src="https://via.placeholder.com/101x18" alt="Cat Energy">
@@ -24,12 +25,14 @@
         </ul>
       </div>
     </nav>
+    </div>
   </header>
   <main class="main-form body__form">
     <div class="main-form__wrapper">
       <h1 class="main-form__title">Подбор программы</h1>
       <p class="main-form__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       <form class="program-form main-form__program-form" action="https://echo.htmlacademy.ru" method="get">
+        <div class="program-form__general-and-program">
         <fieldset class="program-form__general general-info">
           <div class="general-info__name text-form">
             <label class="text-form__label" for="name">Имя:*</label>
@@ -60,8 +63,10 @@
             </li>
           </ul>
         </fieldset>
+        </div>
         <fieldset class="program-form__contacts owner-contacts">
           <legend class="owner-contacts__title legend">Контактные данные (владельца кота)</legend>
+          <div class="owner-contacts__email-and-phone">
           <div class="owner-contacts__email text-form">
             <label class="text-form__label" for="email">E-mail:*</label>
             <input class="text-form__input" type="email" name="email" id="email" placeholder="kuklachev@gmail.com">
@@ -70,6 +75,7 @@
             <label class="text-form__label" for="phone-number">Телефон:*</label>
             <input class="text-form__input" type="tel" name="phone-number" id="phone-number"
               placeholder="8 (960) 900-60-90">
+          </div>
           </div>
         </fieldset>
         <fieldset class="program-form__comment owner-comment">
@@ -98,24 +104,27 @@
             </li>
           </ul>
         </fieldset>
+        <div class="program-form__final">
         <button class="program-form__submit button" type="submit">Отправить заявку</button>
         <p class="program-form__notes">* — Обязательные поля</p>
+        </div>
       </form>
     </div>
   </main>
   <footer class="page-footer body__footer">
     <section class="contacts page-footer__contacts">
-      <h2 class="visually-hidden">Как нас найти</h2>
-      <div class="contacts__welcome">
-        <p>Приглашаем к сотрудничеству дилеров!</p>
-      </div>
-      <div class="contacts__address">
-        <p>ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <div class="contacts__texts-wrapper">
+        <h2 class="visually-hidden">Как нас найти</h2>
+        <div class="contacts__welcome-and-address">
+          <p class="contacts__welcome">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
       </div>
       <img class="contacts__map" src="https://via.placeholder.com/320x362" alt="Как нас найти">
       <div class="contacts__map-point"></div>
     </section>
     <section class="page-footer__bottom footer-bottom">
+      <div class="footer-bottom__wrapper">
       <h2 class="visually-hidden">Наши контакты</h2>
       <a class="footer-bottom__logo" href="index.html"><img src="https://via.placeholder.com/128x24"
           alt="Cat Energy"></a>
@@ -129,6 +138,7 @@
           <p class="footer-bottom__academy-title">HTML Academy</p>
           <img class="footer-bottom__academy-icon" src="https://via.placeholder.com/27x34" alt="Логотип HTML Academy">
         </a>
+      </div>
       </div>
     </section>
   </footer>

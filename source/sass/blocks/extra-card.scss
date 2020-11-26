@@ -1,3 +1,21 @@
+.extra-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 98px;
+  margin-bottom: 32px;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
+}
+
+.extra-card__info {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .extra-card__title {
   font-family: "Oswald Regular", sans-serif;
   font-weight: 400;
@@ -5,12 +23,28 @@
   line-height: 16px;
   text-transform: uppercase;
   color: $special-dark-gray-2;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .extra-card__details {
   margin: 0;
   padding: 0;
   color: $special-dark-gray;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .extra-card__price {

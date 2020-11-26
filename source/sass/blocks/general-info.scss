@@ -2,4 +2,8 @@
   text-transform: uppercase;
 
   @include fieldset-no-decor;
+
+  @media (min-width: $desktop-width) {
+    width: 569px;
+  }
 }

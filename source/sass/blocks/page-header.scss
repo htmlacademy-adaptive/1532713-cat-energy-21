@@ -1,5 +1,4 @@
 .page-header {
-  @include red-outline;
   min-height: 66px;
 
   @media (min-width: $tablet-width) {
@@ -16,11 +15,10 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
-  @include green-outline;
-
   @media (min-width: $tablet-width) {
     padding-top: 24px;
-    width: 738px;
+    width: 708px;
+    flex-wrap: nowrap;
   }
 
   @media (min-width: $desktop-width) {
@@ -29,13 +27,7 @@
 }
 
 .page-header__logo {
-  @include blue-outline;
-}
-
-.page-header__logo-icon {
-  @include green-outline;
-}
-
-.page-header__logo-text {
-  @include green-outline;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
 }

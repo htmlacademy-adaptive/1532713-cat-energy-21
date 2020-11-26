@@ -2,6 +2,19 @@
   @include fieldset-no-decor;
 }
 
+.extra-info__title {
+  margin-bottom: 34px;
+}
+
 .extra-info__list {
   @include list-no-decor;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
