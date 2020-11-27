@@ -5,9 +5,18 @@
   line-height: 16px;
 }
 
+.main-catalog__wrapper {
+  @include center;
+}
+
 .main-catalog__title {
   font-family: "Oswald Regular", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }

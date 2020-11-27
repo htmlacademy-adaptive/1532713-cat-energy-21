@@ -1,3 +1,13 @@
 .checkbox-unit {
   text-transform: uppercase;
+  margin-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: auto;
+  }
+}
+
+.checkbox-unit:last-child {
+  margin-bottom: 0;
 }

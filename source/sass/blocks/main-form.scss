@@ -5,14 +5,63 @@
   line-height: 18px;
 }
 
+.main-form__wrapper {
+  @include center;
+}
+
 .main-form__title {
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 37px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 56px;
+  }
 }
 
 .main-form__subtitle {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  width: 230px;
+  margin-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 40px;
+    font-size: 20px;
+    line-height: 30px;
+    width: 330px;
+    margin-bottom: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+  }
+}
+
+.main-form__program-form {
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    width: 630px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    margin-bottom: 82px;
+  }
 }

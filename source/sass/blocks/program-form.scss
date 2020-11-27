@@ -1,5 +1,83 @@
+.program-form__general-and-program {
+  margin-bottom: 48px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 71px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 69px;
+  }
+}
+
+.program-form__general {
+  margin-bottom: 44px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.program-form__contacts {
+  margin-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
+}
+
+.program-form__comment {
+  margin-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
+}
+
+.program-form__extra {
+  margin-bottom: 34px;
+}
+
+.program-form__final {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.program-form__submit {
+  width: 100%;
+  margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    margin-right: 61px;
+    width: 282px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 81px;
+    width: 568px;
+  }
+}
+
 .program-form__notes {
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 16px;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+  }
 }

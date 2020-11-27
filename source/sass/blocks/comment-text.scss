@@ -5,6 +5,15 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $special-dark-gray;
+  width: 100%;
+  min-height: 150px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    min-height: 174px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .comment-text::placeholder {
