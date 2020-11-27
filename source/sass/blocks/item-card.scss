@@ -1,12 +1,10 @@
 .item-card {
   display: flex;
   flex-direction: column;
-  min-height: 190px;
   margin-bottom: 19px;
 
   @media (min-width: $tablet-width) {
     width: 324px;
-    min-height: 511px;
     background: linear-gradient(to bottom, $white, $white 16%, $basic-gray 16%, $basic-gray);
   }
 

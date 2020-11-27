@@ -13,13 +13,13 @@
 .owner-contacts__email-and-phone {
   @media (min-width: $desktop-width) {
     display: flex;
+    justify-content: space-between;
   }
 }
 
 .owner-contacts__email {
   @media (min-width: $desktop-width) {
     width: 569px;
-    margin-right: 78px;
     margin-bottom: 0;
   }
 }
