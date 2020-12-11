@@ -1,0 +1,18 @@
+.body {
+  margin: 0;
+}
+
+.body__wrapper {
+  max-width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (min-width: $desktop-width) {
+    background-image:
+      linear-gradient(to left, rgba(104, 183, 56, 0.85) 721px, transparent 721px),
+      url("../../img/index-background-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: auto 694px;
+  }
+}

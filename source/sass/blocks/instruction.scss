@@ -2,24 +2,175 @@
   @include center;
 }
 
+.instruction__title {
+  margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+  }
+}
+
 .instruction__list {
   @include list-no-decor;
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 250px 250px;
+    column-gap: 134px;
+    row-gap: 37px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 80px;
   }
 }
 
 .instruction__list-item {
   color: $special-dark-gray;
+  min-height: 60px;
+  padding-left: 80px;
+  margin-bottom: 20px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
+    padding-left: 0;
+    min-height: 280px;
+    margin-bottom: 0;
+  }
+}
+
+.instruction__list-item--1::before,
+.instruction__list-item--2::before,
+.instruction__list-item--3::before,
+.instruction__list-item--4::before {
+  @media (max-width: $mobile-only) {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 0;
+    top: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 0;
+    top: 40px;
+  }
+}
+
+.instruction__list-item--1::before {
+  @media (max-width: $mobile-only) {
+    background-image: url("../../img/instruction1-mobile.svg");
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/instruction1-tablet.svg");
+  }
+}
+
+.instruction__list-item--2::before {
+  @media (max-width: $mobile-only) {
+    background-image: url("../../img/instruction2-mobile.svg");
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/instruction2-tablet.svg");
+  }
+}
+
+.instruction__list-item--3::before {
+  @media (max-width: $mobile-only) {
+    background-image: url("../../img/instruction3-mobile.svg");
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/instruction3-tablet.svg");
+  }
+}
+
+.instruction__list-item--4::before {
+  @media (max-width: $mobile-only) {
+    background-image: url("../../img/instruction4-mobile.svg");
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/instruction4-tablet.svg");
+  }
+}
+
+.instruction__list-item--1::after,
+.instruction__list-item--2::after,
+.instruction__list-item--3::after,
+.instruction__list-item--4::after {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    font-family: "Oswald Regular", sans-serif;
+    font-size: 280px;
+    line-height: 280px;
+    color: #f2f2f2;
+    z-index: -1;
+  }
+}
+
+.instruction__list-item--1::after {
+  @media (min-width: $tablet-width) {
+    content: "1";
+    width: 112px;
+    height: 280px;
+    right: 20px;
+    top: 0;
+  }
+}
+
+.instruction__list-item--2::after {
+  @media (min-width: $tablet-width) {
+    content: "2";
+    width: 134px;
+    height: 280px;
+    right: 5px;
+    top: 0;
+  }
+}
+
+.instruction__list-item--3::after {
+  @media (min-width: $tablet-width) {
+    content: "3";
+    width: 134px;
+    height: 280px;
+    right: 5px;
+    top: 0;
+  }
+}
+
+.instruction__list-item--4::after {
+  @media (min-width: $tablet-width) {
+    content: "4";
+    width: 136px;
+    height: 280px;
+    right: 2px;
+    top: 0;
+  }
+}
+
+
+.instruction__list-item:last-child {
+  margin-bottom: 0;
+}
+
+.instruction__list-item p {
+  margin: 0;
+  padding: 0;
+  padding-top: 2px;
+
+  @media (min-width: $tablet-width) {
+    width: 245px;
+    margin-top: 151px;
   }
 }

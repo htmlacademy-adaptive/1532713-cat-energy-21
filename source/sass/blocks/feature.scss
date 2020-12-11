@@ -2,6 +2,34 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+  position: relative;
+  width: 124px;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+  }
+}
+
+.feature::after {
+  @media (max-width: $mobile-only) {
+    content: "";
+    background-image: url("../../img/feature-border-mobile.svg");
+    background-repeat: no-repeat;
+    width: 124px;
+    height: 56px;
+    position: absolute;
+  }
+
+  @media (min-width: $tablet-width) {
+    content: "";
+    background-image: url("../../img/feature-border-tablet.svg");
+    background-repeat: no-repeat;
+    width: 162px;
+    height: 77px;
+    position: absolute;
+  }
 }
 
 .feature__numbers {
@@ -10,10 +38,13 @@
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
+  margin-bottom: 9px;
+  padding-top: 15px;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
+    margin-bottom: 12px;
   }
 }
 
@@ -21,9 +52,13 @@
   color: $special-dark-gray;
   font-size: 12px;
   line-height: 12px;
+  width: 75px;
+  margin-left: auto;
+  margin-right: auto;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 14px;
+    width: 127px;
   }
 }
