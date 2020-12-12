@@ -1,7 +1,4 @@
 .main-nav {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: columns;
   position: relative;
 }
 
@@ -9,6 +6,11 @@
   position: absolute;
   top: 0;
   right: 0;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
 
   @media (min-width: $tablet-width) {
     display: none;

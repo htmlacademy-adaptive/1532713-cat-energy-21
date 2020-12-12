@@ -2,15 +2,20 @@
   font-family: "Oswald Regular", sans-serif;
   font-weight: 400;
   color: $white;
+  position: relative;
+}
 
+.promo__mobile-background {
   @media (max-width: $mobile-only) {
-    width: 320px;
-    margin-left: auto;
-    margin-right: auto;
+    position: absolute;
     background-image:
       linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 302px, transparent 302px),
       url("../../img/index-background-mobile.jpg");
     background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% auto;
+    width: 100%;
+    height: 302px;
   }
 }
 
