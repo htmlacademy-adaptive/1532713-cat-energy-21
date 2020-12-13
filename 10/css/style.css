@@ -361,18 +361,20 @@ img {
   line-height: 18px; }
 
 .body {
-  margin: 0; }
+  margin: 0;
+  position: relative; }
 
-.body__wrapper {
-  max-width: 1440px;
-  margin-right: auto;
-  margin-left: auto; }
-  @media (min-width: 1440px) {
-    .body__wrapper {
-      background-image: linear-gradient(to left, rgba(104, 183, 56, 0.85) 721px, transparent 721px), url("../../img/index-background-desktop.jpg");
-      background-repeat: no-repeat;
-      background-position: top right;
-      background-size: auto 694px; } }
+@media (min-width: 1440px) {
+  .body__desktop-background {
+    position: absolute;
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../img/index-background-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: top rigth;
+    background-size: 100% auto, cover;
+    width: 50%;
+    height: 694px;
+    top: 0;
+    right: 0; } }
 
 .page-header {
   min-height: 66px; }
@@ -452,14 +454,18 @@ img {
 .promo {
   font-family: "Oswald Regular", sans-serif;
   font-weight: 400;
-  color: #ffffff; }
-  @media (max-width: 767px) {
-    .promo {
-      width: 320px;
-      margin-left: auto;
-      margin-right: auto;
-      background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 302px, transparent 302px), url("../../img/index-background-mobile.jpg");
-      background-repeat: no-repeat; } }
+  color: #ffffff;
+  position: relative; }
+
+@media (max-width: 767px) {
+  .promo__mobile-background {
+    position: absolute;
+    background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 302px, transparent 302px), url("../../img/index-background-mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% auto;
+    width: 100%;
+    height: 302px; } }
 
 .promo__wrapper {
   width: 280px;
@@ -553,15 +559,17 @@ img {
       left: 80px; } }
 
 .main-nav {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: columns;
   position: relative; }
 
 .main-nav__toggle {
   position: absolute;
   top: 0;
-  right: 0; }
+  right: 0;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  background-color: transparent;
+  outline: none; }
   @media (min-width: 768px) {
     .main-nav__toggle {
       display: none; } }
