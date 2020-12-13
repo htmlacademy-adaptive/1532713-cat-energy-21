@@ -15,3 +15,29 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.mobile-break {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.tablet-break {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.desktop-break {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}

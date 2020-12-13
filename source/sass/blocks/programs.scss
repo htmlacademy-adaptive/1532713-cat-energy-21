@@ -8,3 +8,15 @@
     grid-column-gap: 80px;
   }
 }
+
+.programs__catalog-slim {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,32 @@
+.page-main__promo {
+  margin-top: 1px;
+  margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 82px;
+  }
+}
+
+.page-main__programs {
+  margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 44px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 71px;
+  }
+}
+
+.page-main__instruction {
+  margin-bottom: 42px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}

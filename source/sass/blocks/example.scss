@@ -1,39 +1,93 @@
 .example {
-  background-color: $lighter-gray;
+  padding-top: 27px;
+
+  @media (max-width: $mobile-only) {
+    background-color: $lighter-gray;
+  }
+
+  @media (min-width: $tablet-width) {
+    background: linear-gradient(to top, #eaeaea, #eaeaea 462px, $white 462px, $white);
+    padding-top: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 11px;
+  }
 }
 
 .example__wrapper {
   @include center;
+  padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 33px;
+  }
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 440px 1fr;
+    column-gap: 130px;
+    padding-bottom: 2px;
+  }
+}
+
+.example__title {
+  margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 57px;
+    margin-bottom: 149px;
   }
 }
 
 .example__text {
+  padding: 0;
+  margin: 0;
   color: $special-dark-gray;
+  margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
+    margin-bottom: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 67px;
   }
 }
 
 .example__features-and-price {
+  margin-bottom: 41px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 40px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
+    justify-content: start;
   }
 }
 
 .example__features {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    width: 366px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 36px;
+  }
 }
 
 .example__price {
@@ -43,10 +97,33 @@
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
+  padding: 0;
+  margin: 0;
+
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
+    width: 180px;
+    text-align: right;
+    margin-top: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 440px;
+    text-align: left;
+  }
+}
+
+.example__price-numbers {
+  @media (min-width: $tablet-width) {
+    padding-top: 9px;
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+    margin-left: 60px;
   }
 }
 

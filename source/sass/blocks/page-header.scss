@@ -8,7 +8,7 @@
 
 .page-header__wrapper {
   @include center;
-  padding-top: 12px;
+  padding-top: 13px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -17,10 +17,46 @@
     padding-top: 24px;
     flex-wrap: nowrap;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 53px;
+  }
 }
 
 .page-header__logo {
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-wrap: nowrap;
   flex-shrink: 0;
+  margin-bottom: 11px;
+  width: 190px;
+  justify-content: space-between;
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+  }
+}
+
+.page-header__logo-icon {
+  width: 34px;
+  height: 37px;
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    height: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 59px;
+  }
+}
+
+.page-header__logo-text {
+  margin-top: 12px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
