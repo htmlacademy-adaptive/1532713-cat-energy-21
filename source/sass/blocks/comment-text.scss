@@ -8,6 +8,9 @@
   width: 100%;
   min-height: 150px;
   box-sizing: border-box;
+  padding-top: 9px;
+  padding-left: 14px;
+  border: 1px solid #e7e7e7;
 
   @media (min-width: $tablet-width) {
     min-height: 174px;
@@ -18,4 +21,18 @@
 
 .comment-text::placeholder {
   color: $special-dark-gray;
+}
+
+.comment-text:hover {
+  border-color: #cdcdcd;
+}
+
+.comment-text:focus {
+  border: 2px solid $special-dark-gray;
+  outline: none;
+}
+
+.comment-text:invalid {
+  border: 2px solid #ff8582;
+  outline: none;
 }

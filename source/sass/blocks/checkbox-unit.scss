@@ -1,6 +1,7 @@
 .checkbox-unit {
   text-transform: uppercase;
-  margin-bottom: 12px;
+  margin-bottom: 24px;
+  padding-left: 46px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -10,4 +11,58 @@
 
 .checkbox-unit:last-child {
   margin-bottom: 0;
+}
+
+.checkbox-unit__label {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 13px;
+  }
+}
+
+.checkbox-unit__label::before {
+  @media (max-width: $mobile-only) {
+    content: "";
+    position: absolute;
+    border: 1px solid $special-gray;
+    width: 28px;
+    height: 28px;
+    left: -46px;
+    top: -3px;
+  }
+
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    border: 1px solid $special-gray;
+    width: 38px;
+    height: 38px;
+    left: -46px;
+    top: -6px;
+  }
+}
+
+.checkbox-unit__input:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 14px;
+  background-image: url("../../img/check-mark.svg");
+  left: -40px;
+  top: 6px;
+
+  @media (min-width: $tablet-width) {
+    left: -35px;
+    top: 7px;
+  }
+}
+
+.checkbox-unit__input:hover + label::before {
+  border-color: #bababa;
+}
+
+.checkbox-unit__input:disabled + label {
+  border-color: #bababa;
+  opacity: 0.3;
 }

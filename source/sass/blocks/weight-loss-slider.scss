@@ -174,8 +174,23 @@
     border-radius: 50%;
     top: -13px;
     left: 46%;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.16);
   }
 }
+
+.weight-loss-slider__toggle:hover {
+  @media (min-width: $tablet-width) {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.19);
+  }
+}
+
+.weight-loss-slider__toggle:active {
+  @media (min-width: $tablet-width) {
+    border-color: $basic-green;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+  }
+}
+
 
 .weight-loss-slider__toggle::after {
   @media (min-width: $tablet-width) {
