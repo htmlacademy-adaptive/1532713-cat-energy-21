@@ -3,6 +3,22 @@
   position: relative;
 }
 
+.body__form {
+  position: relative;
+}
+
+.body__form::before {
+  @media (max-width: $mobile-only) {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #e6e6e6;
+    position: absolute;
+    top: 0;
+  }
+}
+
 .body__desktop-background {
   @media (min-width: $desktop-width) {
     position: absolute;
@@ -17,4 +33,8 @@
     top: 0;
     right: 0;
   }
+}
+
+.body--form .contacts {
+  background-color: $basic-gray;
 }

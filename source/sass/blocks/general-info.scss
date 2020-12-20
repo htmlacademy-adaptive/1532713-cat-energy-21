@@ -1,9 +1,23 @@
 .general-info {
   text-transform: uppercase;
 
-  @include fieldset-no-decor;
-
   @media (min-width: $desktop-width) {
     width: 569px;
+  }
+}
+
+.general-info__weight {
+  @media (max-width: $mobile-only) {
+    margin-bottom: 14px;
+  }
+}
+
+.general-info__weight .text-form__label {
+  @media (max-width: $mobile-only) {
+    margin-right: 2px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 6px;
   }
 }

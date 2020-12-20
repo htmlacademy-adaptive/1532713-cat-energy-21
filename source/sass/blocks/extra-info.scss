@@ -1,20 +1,87 @@
-.extra-info {
-  @include fieldset-no-decor;
+.extra-info__header {
+  display: flex;
+  flex-wrap: no-wrap;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
+}
+
+.extra-info__before-line {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    content: "";
+    height: 2px;
+    width: calc((100% - 630px) / 2 - 39px);
+    background-color: $basic-green;
+    margin-top: 23px;
+    margin-right: 39px;
+    display: block;
+    flex-shrink: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: calc((100% - 1220px) / 2 - 39px);
+  }
 }
 
 .extra-info__title {
-  margin-bottom: 34px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 40px;
+
+  @media (max-width: $mobile-only) {
+    margin-left: calc((100% - 280px) / 2);
+    max-width: 280px;
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 630px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1220px;
+  }
+}
+
+.extra-info__after-line {
+  content: "";
+  height: 2px;
+  background-color: $basic-green;
+  width: 100%;
+  margin-top: 16px;
+  margin-left: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 23px;
+    margin-left: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 24px;
+  }
 }
 
 .extra-info__list {
   @include list-no-decor;
 
+  @media (max-width: $mobile-only) {
+    margin-left: calc((100% - 280px) / 2);
+    max-width: 280px;
+  }
+
   @media (min-width: $tablet-width) {
+    @include form-center;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+    row-gap: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    @include center;
+    grid-template-columns: 221px 221px 221px 221px;
+    column-gap: 104px;
   }
 }
