@@ -9,20 +9,31 @@
   @include center;
   display: flex;
   flex-direction: column;
-  text-align: center;
-  padding-bottom: 22px;
+  padding-bottom: 15px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    padding-top: 45px;
+    padding-bottom: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 48px;
   }
 }
 
 .footer-bottom__logo {
   @media (max-width: $mobile-only) {
-    padding-top: 39px;
-    margin-bottom: 52px;
+    padding-top: 40px;
+    padding-bottom: 28px;
     position: relative;
+    text-align: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 7px;
   }
 }
 
@@ -33,15 +44,30 @@
     height: 1px;
     width: 280px;
     position: absolute;
-    bottom: -32px;
+    bottom: 0;
     left: 0;
   }
 }
 
+.footer-bottom__logo:hover,
+.footer-bottom__logo:focus {
+  opacity: 0.8;
+}
+
+.footer-bottom__logo:active {
+  opacity: 0.6;
+}
+
 .footer-bottom__social-networks {
+  @include list-no-decor;
+
   @media (max-width: $mobile-only) {
-    margin-bottom: 43px;
+    margin-bottom: 13px;
     position: relative;
+    padding-top: 19px;
+    padding-bottom: 18px;
+    margin-left: 55px;
+    margin-right: 59px;
   }
 }
 
@@ -52,8 +78,8 @@
     height: 1px;
     width: 280px;
     position: absolute;
-    bottom: -21px;
-    left: 0;
+    bottom: 0;
+    left: -55px;
   }
 }
 
@@ -62,4 +88,27 @@
   color: $special-dark-gray;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 3px;
+  }
+}
+
+.footer-bottom__academy-icon {
+  width: 27px;
+  height: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 23px;
+  }
+}
+
+.footer-bottom__academy-link:hover path,
+.footer-bottom__academy-link:focus path {
+  fill: $basic-green;
+}
+
+.footer-bottom__academy-link:active {
+  opacity: 0.3;
 }
