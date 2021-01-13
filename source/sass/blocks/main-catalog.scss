@@ -6,17 +6,48 @@
 }
 
 .main-catalog__wrapper {
-  @include center;
+  /*@include center; */
+  padding-top: 28px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 61px;
+  }
 }
 
 .main-catalog__title {
-  font-family: "Oswald Regular", sans-serif;
+  font-family: "Oswald Regular", "Arial Narrow", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
+  margin: 0;
+  padding: 0;
+
+  @include center;
+  margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 91px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 85px;
+  }
+}
+
+.main-catalog__basic-products {
+  @include center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 42px;
+  }
+}
+
+.main-catalog__extra-products {
+  @include blue-outline;
 }

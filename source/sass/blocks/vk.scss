@@ -1,0 +1,30 @@
+.vk__link {
+  text-decoration: none;
+  width: 23px;
+  height: 16px;
+
+  @media (min-width: $tablet-width) {
+    width: 30px;
+    height: 22px;
+  }
+}
+
+.vk__icon {
+  width: 23px;
+  height: 16px;
+
+  @media (min-width: $tablet-width) {
+    width: 30px;
+    height: 22px;
+  }
+}
+
+.vk__link:hover path,
+.vk__link:focus path {
+  fill: $basic-green;
+}
+
+.vk__link:active path {
+  fill: $basic-green;
+  opacity: 0.3;
+}

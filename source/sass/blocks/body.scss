@@ -19,12 +19,43 @@
   }
 }
 
+
+.body--catalog .contacts {
+  background-color: #f2f2f2;
+}
+
+.body__main-catalog {
+  position: relative;
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 76px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 46px;
+  }
+}
+
+
+.body__main-catalog::before {
+  @media (max-width: $mobile-only) {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #e6e6e6;
+    position: absolute;
+    top: 0;
+  }
+}
+
 .body__desktop-background {
   @media (min-width: $desktop-width) {
     position: absolute;
     background-image:
       linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-      url("../../img/index-background-desktop.jpg");
+      url("../img/index-background-desktop.jpg");
     background-repeat: no-repeat;
     background-position: top rigth;
     background-size: 100% auto, cover;
@@ -32,6 +63,12 @@
     height: 694px;
     top: 0;
     right: 0;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image:
+        linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+        url("../img/index-background-desktop@2x.jpg");
+    }
   }
 }
 

@@ -15,7 +15,7 @@
 .feature::after {
   @media (max-width: $mobile-only) {
     content: "";
-    background-image: url("../../img/feature-border-mobile.svg");
+    background-image: url("../img/feature-border-mobile.svg");
     background-repeat: no-repeat;
     width: 124px;
     height: 56px;
@@ -24,7 +24,7 @@
 
   @media (min-width: $tablet-width) {
     content: "";
-    background-image: url("../../img/feature-border-tablet.svg");
+    background-image: url("../img/feature-border-tablet.svg");
     background-repeat: no-repeat;
     width: 162px;
     height: 77px;
@@ -33,7 +33,7 @@
 }
 
 .feature__numbers {
-  font-family: "Oswald Regular", sans-serif;
+  font-family: "Oswald Regular", "Arial Narrow", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;

@@ -1,0 +1,30 @@
+.fb__link {
+  text-decoration: none;
+  width: 22px;
+  height: 22px;
+
+  @media (min-width: $tablet-width) {
+    width: 28px;
+    height: 33px;
+  }
+}
+
+.fb__icon {
+  width: 22px;
+  height: 22px;
+
+  @media (min-width: $tablet-width) {
+    width: 28px;
+    height: 33px;
+  }
+}
+
+.fb__link:hover path,
+.fb__link:focus path {
+  stroke: $basic-green;
+}
+
+.fb__link:active path {
+  stroke: $basic-green;
+  opacity: 0.3;
+}

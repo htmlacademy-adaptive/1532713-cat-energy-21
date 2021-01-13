@@ -20,7 +20,7 @@
 }
 
 .catalog-preview__title {
-  font-family: "Oswald Regular", sans-serif;
+  font-family: "Oswald Regular", "Arial Narrow", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
@@ -50,7 +50,7 @@
     content: "";
     background-repeat: no-repeat;
     position: absolute;
-    background-image: url("../../img/cat-slim-mobile.svg");
+    background-image: url("../img/cat-slim-mobile.svg");
     width: 50px;
     height: 53px;
     left: 2px;
@@ -59,7 +59,7 @@
 
   @media (min-width: $tablet-width) and (max-width: 1399px) {
     content: "";
-    background-image: url("../../img/cat-slim-tablet.svg");
+    background-image: url("../img/cat-slim-tablet.svg");
     background-repeat: no-repeat;
     position: absolute;
     width: 200px;
@@ -70,7 +70,7 @@
 
   @media (min-width: $desktop-width) {
     content: "";
-    background-image: url("../../img/cat-slim-desktop.svg");
+    background-image: url("../img/cat-slim-desktop.svg");
     background-repeat: no-repeat;
     position: absolute;
     width: 100px;
@@ -83,7 +83,7 @@
 .catalog-preview--pro .catalog-preview__title::before {
   @media (max-width: $mobile-only) {
     content: "";
-    background-image: url("../../img/cat-pro-mobile.svg");
+    background-image: url("../img/cat-pro-mobile.svg");
     background-repeat: no-repeat;
     position: absolute;
     width: 67px;
@@ -94,7 +94,7 @@
 
   @media (min-width: $tablet-width) and (max-width: 1399px) {
     content: "";
-    background-image: url("../../img/cat-pro-tablet.svg");
+    background-image: url("../img/cat-pro-tablet.svg");
     background-repeat: no-repeat;
     position: absolute;
     width: 268px;
@@ -105,7 +105,7 @@
 
   @media (min-width: $desktop-width) {
     content: "";
-    background-image: url("../../img/cat-pro-desktop.svg");
+    background-image: url("../img/cat-pro-desktop.svg");
     background-repeat: no-repeat;
     position: absolute;
     width: 134px;
@@ -156,7 +156,7 @@
 }
 
 .catalog-preview__link {
-  font-family: "Oswald Regular", sans-serif;
+  font-family: "Oswald Regular", "Arial Narrow", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
@@ -173,7 +173,7 @@
 
 .catalog-preview__link::after {
   content: "";
-  background-image: url("../../img/arrow-short.svg");
+  background-image: url("../img/arrow-short.svg");
   background-repeat: no-repeat;
   width: 24px;
   height: 12px;

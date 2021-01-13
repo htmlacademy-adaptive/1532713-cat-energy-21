@@ -1,11 +1,10 @@
 .extra-card {
   display: flex;
   flex-direction: column;
-  min-height: 98px;
-  margin-bottom: 32px;
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
+    justify-content: space-between;
   }
 }
 
@@ -13,11 +12,21 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    padding-left: 38px;
+    padding-right: 38px;
+    padding-top: 25px;
+    margin-bottom: 11px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
+    width: 640px;
   }
 }
 
 .extra-card__title {
-  font-family: "Oswald Regular", sans-serif;
+  font-family: "Oswald Regular", "Arial Narrow", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
@@ -25,6 +34,11 @@
   color: $special-dark-gray-2;
   margin: 0;
   padding: 0;
+
+  @media (max-width: $mobile-only) {
+    padding-top: 15px;
+    margin-bottom: 10px;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -40,14 +54,54 @@
   justify-content: space-between;
   font-size: 14px;
   line-height: 20px;
+  margin-bottom: 11px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
+    padding-top: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 316px;
   }
 }
 
 .extra-card__price {
   margin: 0;
   padding: 0;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 90px;
+    text-align: end;
+    margin-left: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 72px;
+    text-align: start;
+  }
+}
+
+.extra-card__button {
+  font-size: 16px;
+  line-height: 20px;
+  padding-bottom: 9px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 10px;
+    padding-bottom: 9px;
+    margin-left: 38px;
+    margin-right: 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 244px;
+    padding-bottom: 10px;
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 15px;
+    align-self: start;
+  }
 }

@@ -67,41 +67,41 @@
 
 .instruction__list-item--1::before {
   @media (max-width: $mobile-only) {
-    background-image: url("../../img/instruction1-mobile.svg");
+    background-image: url("../img/instruction1-mobile.svg");
   }
 
   @media (min-width: $tablet-width) {
-    background-image: url("../../img/instruction1-tablet.svg");
+    background-image: url("../img/instruction1-tablet.svg");
   }
 }
 
 .instruction__list-item--2::before {
   @media (max-width: $mobile-only) {
-    background-image: url("../../img/instruction2-mobile.svg");
+    background-image: url("../img/instruction2-mobile.svg");
   }
 
   @media (min-width: $tablet-width) {
-    background-image: url("../../img/instruction2-tablet.svg");
+    background-image: url("../img/instruction2-tablet.svg");
   }
 }
 
 .instruction__list-item--3::before {
   @media (max-width: $mobile-only) {
-    background-image: url("../../img/instruction3-mobile.svg");
+    background-image: url("../img/instruction3-mobile.svg");
   }
 
   @media (min-width: $tablet-width) {
-    background-image: url("../../img/instruction3-tablet.svg");
+    background-image: url("../img/instruction3-tablet.svg");
   }
 }
 
 .instruction__list-item--4::before {
   @media (max-width: $mobile-only) {
-    background-image: url("../../img/instruction4-mobile.svg");
+    background-image: url("../img/instruction4-mobile.svg");
   }
 
   @media (min-width: $tablet-width) {
-    background-image: url("../../img/instruction4-tablet.svg");
+    background-image: url("../img/instruction4-tablet.svg");
   }
 }
 
@@ -111,7 +111,7 @@
 .instruction__list-item--4::after {
   @media (min-width: $tablet-width) {
     position: absolute;
-    font-family: "Oswald Regular", sans-serif;
+    font-family: "Oswald Regular", "Arial Narrow", sans-serif;
     font-size: 280px;
     line-height: 280px;
     color: #f2f2f2;

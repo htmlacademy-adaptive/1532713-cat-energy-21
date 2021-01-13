@@ -1,14 +1,15 @@
 .item-card {
   display: flex;
   flex-direction: column;
-  margin-bottom: 19px;
 
   @media (min-width: $tablet-width) {
     width: 324px;
-    background: linear-gradient(to bottom, $white, $white 16%, $basic-gray 16%, $basic-gray);
+    padding-bottom: 40px;
+    background: linear-gradient(to bottom, $white, $white 73px, $basic-gray 73px, $basic-gray);
   }
 
   @media (min-width: $desktop-width) {
+    background: linear-gradient(to bottom, $white, $white 80px, $basic-gray 80px, $basic-gray);
     width: 245px;
   }
 }
@@ -16,24 +17,65 @@
 .item-card__content {
   display: flex;
   justify-content: space-between;
-  margin-top: 11px;
-  margin-bottom: 22px;
+
+  @include red-outline;
+
+  @media (max-width: $mobile-only) {
+    @include center;
+    padding-top: 11px;
+    margin-bottom: 14px;
+    margin-top: 8px;
+  }
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
     margin-left: 36px;
     margin-right: 36px;
+    margin-bottom: 32px;
   }
 
   @media (min-width: $desktop-width) {
     width: 180px;
     margin-left: 35px;
     margin-right: 30px;
+    margin-bottom: 33px;
   }
+}
+
+.item-card__image-link {
+  @include blue-outline;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-shrink: 0;
+  line-height: 0;
+  width: 140px;
+  height: 112px;
+
+  @media (min-width: $tablet-width) {
+    width: 252px;
+    height: 230px;
+    align-items: flex-start;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 180px;
+    height: 240px;
+  }
+}
+
+.item-card__image {
+  margin: 0;
+  padding: 0;
+
+  @include red-outline;
 }
 
 .item-card__info {
   width: 142px;
+  padding-top: 3px;
+
+  @include green-outline;
 
   @media (min-width: $tablet-width) {
     width: 252px;
@@ -51,7 +93,7 @@
 }
 
 .item-card__title {
-  font-family: "Oswald Regular", sans-serif;
+  font-family: "Oswald Regular", "Arial Narrow", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -60,7 +102,7 @@
   margin: 0;
   padding: 0;
   width: 80px;
-  margin-bottom: 18px;
+  margin-bottom: 14px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -69,6 +111,54 @@
     text-align: center;
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 13px;
+    padding-top: 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+    line-height: 21px;
+    margin-bottom: 17px;
+  }
+}
+
+.item-card--chicken500 .item-card__image {
+  @media (max-width: $mobile-only) {
+    margin-bottom: 12px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 27px;
+  }
+}
+
+.item-card--fish500 .item-card__image {
+  @media (max-width: $mobile-only) {
+    margin-bottom: 7px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 25px;
+  }
+}
+
+.item-card--buckwheat500 .item-card__image {
+  @media (max-width: $mobile-only) {
+    margin-bottom: 4px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 27px;
+  }
+}
+
+.item-card--rice500 .item-card__image {
+  @media (max-width: $mobile-only) {
+    margin-bottom: 4px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 25px;
   }
 }
 
@@ -83,9 +173,34 @@
   }
 }
 
-.item-card .button {
+.item-card__price .details-set__value {
+  text-transform: uppercase;
+}
+
+.item-card__weight .details-set__value {
+  padding-right: 3px;
+
+  @media (min-width: $desktop-width) {
+    padding-right: 6px;
+  }
+}
+
+.item-card__button {
+  font-size: 16px;
+  line-height: 20px;
+  padding-bottom: 9px;
+
+  @media (max-width: $mobile-only) {
+    @include center;
+  }
+
   @media (min-width: $tablet-width) {
     margin-left: 39px;
     margin-right: 37px;
+    padding-top: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 10px;
   }
 }
