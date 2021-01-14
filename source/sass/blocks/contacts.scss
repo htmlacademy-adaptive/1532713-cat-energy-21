@@ -78,8 +78,6 @@
   border: none;
   display: block;
 
-  @include blue-outline;
-
   @media (min-width: $tablet-width) {
     height: 400px;
   }

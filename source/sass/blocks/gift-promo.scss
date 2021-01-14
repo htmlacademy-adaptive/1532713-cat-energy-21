@@ -14,8 +14,6 @@
     }
   }
 
-  @include blue-outline;
-
   @media (min-width: $tablet-width) and (max-width: 1439px) {
     width: 708px;
     height: 200px;

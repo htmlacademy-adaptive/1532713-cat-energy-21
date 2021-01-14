@@ -127,6 +127,10 @@
     right: 20px;
     top: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    right: 15px;
+  }
 }
 
 .instruction__list-item--2::after {
@@ -136,6 +140,10 @@
     height: 280px;
     right: 5px;
     top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 0;
   }
 }
 
@@ -147,6 +155,10 @@
     right: 5px;
     top: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    right: -2px;
+  }
 }
 
 .instruction__list-item--4::after {
@@ -156,6 +168,10 @@
     height: 280px;
     right: 2px;
     top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: -4px;
   }
 }
 
