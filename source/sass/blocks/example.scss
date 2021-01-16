@@ -6,7 +6,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    background: linear-gradient(to top, #eaeaea, #eaeaea 462px, $white 462px, $white);
+    background: linear-gradient(to top, $lighter-gray, $lighter-gray 462px, $white 462px, $white);
     padding-top: 47px;
   }
 

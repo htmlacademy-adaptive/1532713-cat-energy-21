@@ -59,10 +59,10 @@
 }
 
 .checkbox-unit__input:hover + label::before {
-  border-color: #bababa;
+  border-color: $medium-gray;
 }
 
 .checkbox-unit__input:disabled + label {
-  border-color: #bababa;
+  border-color: $medium-gray;
   opacity: 0.3;
 }

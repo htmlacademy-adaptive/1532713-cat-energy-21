@@ -12,6 +12,7 @@
 .instagram__icon {
   width: 16px;
   height: 16px;
+  fill: $dark-gray;
 
   @media (min-width: $tablet-width) {
     width: 23px;
@@ -20,12 +21,12 @@
   }
 }
 
-.instagram__link:hover path,
-.instagram__link:focus path {
+.instagram__link:hover .instagram__icon,
+.instagram__link:focus .instagram__icon {
   fill: $basic-green;
 }
 
-.instagram__link:active path {
+.instagram__link:active .instagram__icon {
   fill: $basic-green;
   opacity: 0.3;
 }

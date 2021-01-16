@@ -40,7 +40,7 @@
 .footer-bottom__logo::after {
   @media (max-width: $mobile-only) {
     content: "";
-    background-color: #d9d9d9;
+    background-color: $gray;
     height: 1px;
     width: 280px;
     position: absolute;
@@ -74,7 +74,7 @@
 .footer-bottom__social-networks::after {
   @media (max-width: $mobile-only) {
     content: "";
-    background-color: #d9d9d9;
+    background-color: $gray;
     height: 1px;
     width: 280px;
     position: absolute;
@@ -98,14 +98,15 @@
 .footer-bottom__academy-icon {
   width: 27px;
   height: 34px;
+  fill: $dark-gray;
 
   @media (min-width: $tablet-width) {
     margin-left: 23px;
   }
 }
 
-.footer-bottom__academy-link:hover path,
-.footer-bottom__academy-link:focus path {
+.footer-bottom__academy-link:hover .footer-bottom__academy-icon,
+.footer-bottom__academy-link:focus .footer-bottom__academy-icon {
   fill: $basic-green;
 }
 

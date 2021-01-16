@@ -10,7 +10,7 @@
   box-sizing: border-box;
   padding-top: 9px;
   padding-left: 14px;
-  border: 1px solid #e7e7e7;
+  border: 1px solid $border-light-gray;
 
   @media (min-width: $tablet-width) {
     min-height: 174px;
@@ -24,7 +24,7 @@
 }
 
 .comment-text:hover {
-  border-color: #cdcdcd;
+  border-color: $special-gray;
 }
 
 .comment-text:focus {
@@ -33,6 +33,6 @@
 }
 
 .comment-text:invalid {
-  border: 2px solid #ff8582;
+  border: 2px solid $error-red;
   outline: none;
 }

@@ -13,14 +13,14 @@
     content: "";
     width: 100%;
     height: 1px;
-    background-color: #e6e6e6;
+    background-color: $light-gray;
     position: absolute;
     top: 0;
   }
 }
 
 .body--catalog .contacts {
-  background-color: #f2f2f2;
+  background-color: $basic-gray;
 }
 
 .body__main-catalog {
@@ -43,7 +43,7 @@
     content: "";
     width: 100%;
     height: 1px;
-    background-color: #e6e6e6;
+    background-color: $light-gray;
     position: absolute;
     top: 0;
   }

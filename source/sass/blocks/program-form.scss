@@ -54,7 +54,7 @@
     content: "";
     width: 100%;
     height: 1px;
-    background-color: #e6e6e6;
+    background-color: $light-gray;
     position: absolute;
     top: 0;
   }
@@ -67,6 +67,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 65px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 67px;
+  }
 }
 
 .program-form__contacts::before {
@@ -75,7 +79,7 @@
     content: "";
     width: 100%;
     height: 1px;
-    background-color: #e6e6e6;
+    background-color: $light-gray;
     position: absolute;
     top: 0;
   }

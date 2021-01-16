@@ -12,6 +12,7 @@
 .vk__icon {
   width: 23px;
   height: 16px;
+  fill: $dark-gray;
 
   @media (min-width: $tablet-width) {
     width: 30px;
@@ -19,12 +20,12 @@
   }
 }
 
-.vk__link:hover path,
-.vk__link:focus path {
+.vk__link:hover .vk__icon,
+.vk__link:focus .vk__icon {
   fill: $basic-green;
 }
 
-.vk__link:active path {
+.vk__link:active .vk__icon {
   fill: $basic-green;
   opacity: 0.3;
 }
