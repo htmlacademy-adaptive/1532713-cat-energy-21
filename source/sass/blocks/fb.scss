@@ -12,6 +12,8 @@
 .fb__icon {
   width: 22px;
   height: 22px;
+  stroke: $dark-gray;
+  fill: none;
 
   @media (min-width: $tablet-width) {
     width: 28px;
@@ -19,12 +21,12 @@
   }
 }
 
-.fb__link:hover path,
-.fb__link:focus path {
+.fb__link:hover .fb__icon,
+.fb__link:focus .fb__icon {
   stroke: $basic-green;
 }
 
-.fb__link:active path {
+.fb__link:active .fb__icon {
   stroke: $basic-green;
   opacity: 0.3;
 }

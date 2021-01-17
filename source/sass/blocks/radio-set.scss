@@ -49,7 +49,7 @@
 }
 
 .radio-set__input:hover + label::before {
-  border-color: #bababa;
+  border-color: $medium-gray;
 }
 
 .radio-set__input:disabled + label {
@@ -57,7 +57,7 @@
 }
 
 .radio-set__input:disabled + label::before {
-  border-color: #bababa;
+  border-color: $medium-gray;
 }
 
 .radio-set__label {

@@ -130,8 +130,17 @@
   padding: 0;
 
   @media (min-width: $tablet-width) {
-    border-bottom: 1px dotted black;
+    border-bottom: 1px dotted $black;
   }
+}
+
+.weight-loss-slider__status:hover p,
+.weight-loss-slider__status:focus p {
+  border-bottom: 1px solid $black;
+}
+
+.weight-loss-slider__status:active p {
+  border: none;
 }
 
 .weight-loss-slider__bar {
@@ -156,7 +165,7 @@
   @media (min-width: $tablet-width) {
     width: 428px;
     height: 6px;
-    background-color: #dcdcdc;
+    background-color: $bar-gray;
     border-radius: 6px;
   }
 }
@@ -177,7 +186,7 @@
     width: 32px;
     height: 32px;
     background-color: $white;
-    border: solid 1px #cdcdcd;
+    border: solid 1px $special-gray;
     border-radius: 50%;
     top: -13px;
     left: 46%;

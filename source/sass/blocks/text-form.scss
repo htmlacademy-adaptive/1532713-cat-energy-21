@@ -9,6 +9,7 @@
   margin-bottom: 13px;
   height: 45px;
   vertical-align: middle;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     min-height: 52px;
@@ -31,7 +32,7 @@
   width: 100%;
   margin-left: 14px;
   padding-left: 14px;
-  border: 1px solid #e7e7e7;
+  border: 1px solid $border-light-gray;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -41,7 +42,7 @@
 }
 
 .text-form__input:hover {
-  border-color: #cdcdcd;
+  border-color: $special-gray;
 }
 
 .text-form__input:focus {
@@ -50,7 +51,7 @@
 }
 
 .text-form__input:invalid {
-  border: 2px solid #ff8582;
+  border: 2px solid $error-red;
   outline: none;
 }
 
@@ -67,4 +68,58 @@
 
 .text-form__input::placeholder {
   color: $special-dark-gray;
+}
+
+.text-form__mail-icon {
+  fill: none;
+  position: absolute;
+  top: 19px;
+  right: 15px;
+  stroke: $special-dark-gray-2;
+
+  @media (min-width: $tablet-width) {
+    top: 18px;
+    right: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 18px;
+  }
+}
+
+.text-form__input:disabled {
+  background-color: transparent;
+  border: 2px solid $special-dark-gray;
+}
+
+.text-form__input:disabled + .text-form__mail-icon {
+  stroke: $basic-green;
+}
+
+.text-form__input:invalid + .text-form__mail-icon {
+  stroke: $error-red;
+}
+
+.text-form__phone-icon {
+  position: absolute;
+  top: 14px;
+  right: 13px;
+  fill: $black;
+
+  @media (min-width: $tablet-width) {
+    top: 15px;
+    right: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 17px;
+  }
+}
+
+.text-form__input:disabled + .text-form__phone-icon {
+  fill: $basic-green;
+}
+
+.text-form__input:invalid + .text-form__phone-icon {
+  fill: $error-red;
 }
