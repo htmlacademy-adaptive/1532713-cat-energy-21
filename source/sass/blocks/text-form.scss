@@ -25,17 +25,17 @@
 
 .text-form__input[type="number"]::-webkit-outer-spin-button,
 .text-form__input[type="number"]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
+  appearance: none;
   margin: 0;
 }
 
 .text-form__input[type="number"] {
-  -moz-appearance: textfield;
+  appearance: textfield;
 }
 
 .text-form__input[type="number"]:hover,
 .text-form__input[type="number"]:focus {
-  -moz-appearance: number-input;
+  appearance: number-input;
 }
 
 .text-form__input {
