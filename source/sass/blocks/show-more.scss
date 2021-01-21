@@ -17,6 +17,10 @@
 }
 
 .show-more__wrapper {
+  @media (max-width: $mobile-only) {
+    @include center;
+  }
+
   @media (min-width: $tablet-width) {
     border: solid 1px $basic-gray;
     height: 100%;

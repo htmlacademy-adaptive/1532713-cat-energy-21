@@ -40,9 +40,9 @@
 }
 
 .main-catalog__basic-products {
-  @include center;
-
   @media (min-width: $tablet-width) {
     margin-bottom: 42px;
+
+    @include center;
   }
 }

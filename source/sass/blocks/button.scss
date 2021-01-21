@@ -12,7 +12,8 @@
   outline: none;
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
   background-color: $basic-green-2;
 }
 
@@ -26,7 +27,8 @@
   color: $special-dark-gray;
 }
 
-.button--show-more:hover {
+.button--show-more:hover,
+.button--show-more:focus {
   background-color: $darker-light-gray;
 }
 
