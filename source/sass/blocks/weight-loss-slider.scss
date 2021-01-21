@@ -113,6 +113,10 @@
   padding-bottom: 10px;
   text-align: center;
 
+  @media (max-width: $mobile-only) {
+    height: 40px;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
