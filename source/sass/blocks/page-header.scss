@@ -45,7 +45,8 @@
   }
 }
 
-.page-header__logo:hover {
+.page-header__logo:hover,
+.page-header__logo:focus {
   opacity: 0.8;
 }
 

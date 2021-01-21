@@ -48,7 +48,8 @@
   }
 }
 
-.radio-set__input:hover + label::before {
+.radio-set__input:hover + label::before,
+.radio-set__input:focus + label::before {
   border-color: $medium-gray;
 }
 

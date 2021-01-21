@@ -58,7 +58,8 @@
   }
 }
 
-.checkbox-unit__input:hover + label::before {
+.checkbox-unit__input:hover + label::before,
+.checkbox-unit__input:focus + label::before {
   border-color: $medium-gray;
 }
 

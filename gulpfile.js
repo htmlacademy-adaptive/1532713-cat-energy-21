@@ -6,7 +6,6 @@ const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const csso = require("postcss-csso");
 const rename = require("gulp-rename");
-const htmlmin = require("gulp-htmlmin");
 const uglify = require("gulp-uglify");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
@@ -22,6 +21,23 @@ const styles = () => {
     .pipe(sourcemap.init())
     .pipe(sass())
     .pipe(postcss([
+      autoprefixer()
+    ]))
+    .pipe(sourcemap.write("."))
+    .pipe(gulp.dest("build/css"))
+    .pipe(sync.stream());
+}
+
+exports.styles = styles;
+
+// Stylesmin
+
+const stylesmin = () => {
+  return gulp.src("source/sass/style.scss")
+    .pipe(plumber())
+    .pipe(sourcemap.init())
+    .pipe(sass())
+    .pipe(postcss([
       autoprefixer(),
       csso()
     ]))
@@ -31,15 +47,16 @@ const styles = () => {
     .pipe(sync.stream());
 }
 
-exports.styles = styles;
+exports.stylesmin = stylesmin;
 
 // HTML
 
 const html = () => {
   return gulp.src("source/*.html")
-    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest("build"));
 }
+
+exports.html = html;
 
 // Scripts
 
@@ -136,7 +153,7 @@ const reload = done => {
 // Watcher
 
 const watcher = () => {
-  gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
+  gulp.watch("source/sass/**/*.scss", gulp.series(styles, stylesmin));
   gulp.watch("source/js/script.js", gulp.series(scripts));
   gulp.watch("source/*.html", gulp.series(html, reload));
 }
@@ -147,6 +164,7 @@ const build = gulp.series(
   clean,
   gulp.parallel(
     styles,
+    stylesmin,
     html,
     scripts,
     sprite,
@@ -163,6 +181,7 @@ exports.default = gulp.series(
   clean,
   gulp.parallel(
     styles,
+    stylesmin,
     html,
     scripts,
     sprite,

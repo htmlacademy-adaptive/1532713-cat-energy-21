@@ -196,7 +196,18 @@
   color: rgba(0, 0, 0, 0.6);
 }
 
+.main-nav__item-link:focus {
+  color: $black;
+  opacity: 0.6;
+}
+
 .body--index .main-nav__list-item:hover:not(.main-nav__list-item--on) {
+  @media (min-width: $desktop-width) {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.body--index .main-nav__item-link:focus {
   @media (min-width: $desktop-width) {
     color: rgba(255, 255, 255, 0.3);
   }
